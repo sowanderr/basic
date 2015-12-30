@@ -1,4 +1,5 @@
 <?php
+echo __DIR__ . "/news.db";
 require 'NewsDB.class.php';
 $news = new NewsDB;
 $errMsg = '';
