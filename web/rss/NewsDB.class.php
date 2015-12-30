@@ -3,8 +3,7 @@ require 'INewsDB.class.php';
 class NewsDB implements INewsDB{
 
     protected $_db;
-
-    const DB_NAME ="/var/www/basic/web/news.db";
+    const DB_NAME ='/var/www/basic/web/rss/news.db';
     const RSS_NAME = 'rss.xml';
     const RSS_TITLE = "Последние новости";
     const RSS_LINK = "http://localhost/web/rss/news.php";
@@ -19,6 +18,7 @@ class NewsDB implements INewsDB{
         $dom->appendChild($rss);
         $channel = $dom->createElement('channel');
         $rss->appendChild($channel);
+        $rss->appendChild($version);
         $t = $dom->createElement('title', self::RSS_NAME);
         $l = $dom->createElement('link', self::RSS_LINK);
         $channel->appendChild($t);
