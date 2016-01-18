@@ -6,7 +6,7 @@ use yii\web\Controller;
 use yii\data\Pagination;
 use app\models\Msgs;
 
-class CountryController extends Controller
+class MsgsController extends Controller
 {
     public function actionIndex()
     {

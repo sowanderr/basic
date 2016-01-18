@@ -1,7 +1,7 @@
 <?php
 
 /* @var $this yii\web\View */
-
+echo __DIR__;
 use yii\helpers\Html;
 
 $this->title = 'About';

@@ -2,8 +2,8 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'sqlite:/../web/rss/news.db',
-    'username' => 'root',
+    'dsn' => 'sqlite:/var/www/basic/web/rss/news.db',
+    'username' => '',
     'password' => '',
     'charset' => 'utf8',
 ];
