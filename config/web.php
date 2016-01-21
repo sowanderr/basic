@@ -3,11 +3,12 @@
 $params = require(__DIR__ . '/params.php');
 //вставил eqweadsasd
 $config = [
+    'language' => 'ru-RU',
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
-        'request' => [
+            'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'lW74QlQv23-cgIwRrMbr0u5p3oekOj6c',
         ],

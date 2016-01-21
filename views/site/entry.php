@@ -2,6 +2,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 ?>
+    <div class="col-lg-5">
 <?php $form = ActiveForm::begin(); ?>
 
 <?= $form->field($model, 'name') ?>
@@ -13,3 +14,4 @@ use yii\widgets\ActiveForm;
     </div>
 
 <?php ActiveForm::end(); ?>
+    </div>
